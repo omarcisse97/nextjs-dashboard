@@ -8,15 +8,13 @@ import CardWrapper from '@/app/ui/dashboard/cards';
 import { RevenueChartSkeleton } from '@/app/ui/skeletons';
 import { InvoiceSkeleton } from '@/app/ui/skeletons';
 import { CardSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+};
 
 export default async function Page() {
-  // const revenue = await fetchRevenue();
-  // const latestInvoices = await fetchLatestInvoices();
-  // const cardData = await fetchCardData();
-  // const totalPaidInvoices = cardData?.totalPaidInvoices;
-  // const totalPendingInvoices = cardData?.totalPendingInvoices;
-  // const numberOfInvoices = cardData?.numberOfInvoices;
-  // const numberOfCustomers = cardData?.numberOfCustomers;
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
